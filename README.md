@@ -9,7 +9,7 @@ La idea es que cada integrante del equipo pueda trabajar en ejercicios pequeños
 # 📦 Clonar el repositorio
 
 ```bash
-git clone [https://github.com/<organizacion>/team_code_lab.git](https://github.com/xaw624/team_code_lab.git)
+git clone https://github.com/xaw624/team_code_lab.git
 cd team_code_lab
 ```
 
