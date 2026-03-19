@@ -19,9 +19,9 @@ def Clasificador(Personas: dict):
         edad = Personas[nombre]["Edad"]
         if edad>=10 and edad <=20:
             Personas[nombre]["rango_edad"] = "10 a 20"
-        elif edad>=10 and edad <=40:
+        elif edad>=30 and edad <=40:
             Personas[nombre]["rango_edad"] = "30 a 40"
-        elif edad>=10 and edad <=30:
+        elif edad>=20 and edad <=30:
             Personas[nombre]["rango_edad"] = "20 a 30"
         elif edad>=40 and edad <=50:
             Personas[nombre]["rango_edad"] = "40 a 50"
