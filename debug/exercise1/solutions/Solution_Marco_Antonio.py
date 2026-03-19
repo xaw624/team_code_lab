@@ -14,7 +14,7 @@ Personas = {
 def Clasificador(Personas: dict):
     for nombre in Personas.keys():
         edad = Personas[nombre]["Edad"]
-        if edad>=10 and edad <20:
+        if edad>=10 and edad <20:#            [      )
             Personas[nombre]["rango_edad"] = "10 a 20"
         elif edad>=1 and edad<10:
             Personas[nombre]["rango_edad"] = "1 a 10"

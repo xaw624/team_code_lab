@@ -15,7 +15,7 @@ def Clasificador(Personas: dict):
     for nombre in Personas.keys():
         edad = Personas[nombre]["Edad"]
         if edad>=1 and edad <=9:
-            Personas[nombre]["rango_edad"] = "1 a 10"
+            Personas[nombre]["rango_edad"] = "1 a 9"
         elif edad >=10 and edad <=19:
             Personas[nombre]["rango_edad"]="10 a 19"
         elif edad>=20 and edad <=29:
@@ -28,5 +28,23 @@ def Clasificador(Personas: dict):
             Personas[nombre]["rango_edad"] = "Más de 50"
     return Personas
 
-Personas_clasificadas = Clasificador(Personas)
+
+def Clasificador2(Personas: dict):
+    for nombre in Personas.keys():
+        edad = Personas[nombre]["Edad"]
+        if edad<=9:
+            Personas[nombre]["rango_edad"] = "1 a 9"
+        elif edad<= 19:
+            Personas[nombre]["rango_edad"]="10 a 19"
+        elif edad <=29:
+            Personas[nombre]["rango_edad"] = "20 a 29"
+        elif edad <=39:
+            Personas[nombre]["rango_edad"] = "30 a 39"
+        elif edad <=50:
+            Personas[nombre]["rango_edad"] = "40 a 50"
+        else:
+            Personas[nombre]["rango_edad"] = "Más de 50"
+    return Personas
+
+Personas_clasificadas = Clasificador2(Personas)
 pprint.pprint(Personas_clasificadas)
