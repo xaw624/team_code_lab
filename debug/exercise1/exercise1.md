@@ -1,4 +1,4 @@
-La siguiente función recibe un diccionar y clasifica las edades de las personas, revisar si la función Clasificador tiene algun error, si es el caso corregir los errores.
+La siguiente función recibe un diccionario y clasifica las edades de las personas, revisar si la función Clasificador tiene algun error, si es el caso corregir los errores.
 
 ```python
 import random
