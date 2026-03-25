@@ -10,7 +10,7 @@
         
 #     return list(grupos)
 # #Aun no está xdxd
-def contar_letras(palabra):
+"""def contar_letras(palabra):
     conteo = {}
     for letra in palabra:
         if letra in conteo:
@@ -26,7 +26,7 @@ def agrupar_anagramas(lista):
     return grupos
 
 letritas = ["eat", "tea", "tan", "ate", "nat", "bat"]
-print(agrupar_anagramas(letritas))
+print(agrupar_anagramas(letritas))"""
 #------------------------------------------------
 def contar_letras(palabra):
     conteo = {}
@@ -43,7 +43,7 @@ def anagramas(p1, p2):
 def agrupar_anagramas(lista):
     grupos = []
     usados = [False] * len(lista)
-
+    print(usados)
     for i in range(len(lista)):
         if not usados[i]:
             grupo = [lista[i]]
@@ -58,5 +58,5 @@ def agrupar_anagramas(lista):
 
     return grupos
 
-letritas = ["eat", "tea", "tan", "ate", "nat", "bat"]
+letritas = ["Eat", "tea", "tan", "ate", "nat", "bat"," anagreama", "aaaanagreama"]
 print(agrupar_anagramas(letritas))

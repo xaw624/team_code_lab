@@ -1,4 +1,4 @@
-lista = ["tea","eat", "tan", "ate", "nat", "bat"]
+lista = ["tea","eat", "tan", "ate", "nat", "bat", "tab", "anagreama", "aaaanagreama"]
 
 
 def agrupar_anagramas(lista: list[str]):
@@ -8,6 +8,7 @@ def agrupar_anagramas(lista: list[str]):
     while len(lista)>0:
         palabra_comparar = lista[0]
         letras_comparar = set(palabra_comparar)
+        print(letras_comparar)
         for palabra in lista:
             letras = set(palabra)
 
@@ -19,6 +20,8 @@ def agrupar_anagramas(lista: list[str]):
         lista_aux=[]
     return lista_agrupados
 
-print(lista)
+#print(lista)
 lista_agrupada = agrupar_anagramas(lista)
 print(lista_agrupada)
+
+
