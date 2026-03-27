@@ -11,7 +11,7 @@ def productos_a_reponer(productos):
     return reposicion
 
 productos = [
-    {"nombre": "Teclado", "stock": "8", "minimo": 10},
+    {"nombre": "Teclado", "stock": None, "minimo": 10},
     {"nombre": "Mouse", "stock": 5, "minimo": "5"},
     {"nombre": "Monitor", "stock": "20", "minimo": 10},
     {"nombre": "USB", "stock": 0, "minimo": "2"},

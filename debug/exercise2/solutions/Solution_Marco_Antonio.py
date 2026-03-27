@@ -1,7 +1,7 @@
 ## Código
 
 def necesita_reposicion(stock, minimo):
-    if stock < minimo:  
+    if str(stock) < str(minimo):  
         return (str(stock), str(minimo))
 
 
@@ -14,12 +14,11 @@ def productos_a_reponer(productos):
                 "nombre": producto["nombre"],
                 "reponer": int(producto["minimo"]) - int(producto["stock"])
             })
-
     return reposicion
 
 
 productos = [
-    {"nombre": "Teclado", "stock": 8, "minimo": 10},
+    {"nombre": "Teclado", "stock": None, "minimo": 10},
     {"nombre": "Mouse", "stock": 5, "minimo": 5},
     {"nombre": "Monitor", "stock": 20, "minimo": 10},
     {"nombre": "USB", "stock": 0, "minimo": 2},
@@ -37,4 +36,6 @@ productos = [
 ]
 
 for producto in productos_a_reponer(productos):
-    print(f'{producto["nombre"]}: reponer {producto["reponer"]}')
+     print(f'{producto["nombre"]}: reponer {producto["reponer"]}')
+    
+    
